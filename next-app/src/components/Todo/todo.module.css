@@ -1,0 +1,24 @@
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todoFormBlock {
+    margin-top: 40px;
+}
+
+.form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formBtn {
+    width: 50%;
+}
+
+.formTeaxtarea {
+    height: 60px;
+}

@@ -1,0 +1,11 @@
+.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.menuItem {
+    color: #ffffff;
+    font-size: 14px;
+}
