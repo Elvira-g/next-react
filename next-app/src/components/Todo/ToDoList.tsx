@@ -1,18 +1,15 @@
-'use client'
+"use client";
 
-import { TodoType } from "@/types/types";
-import React from 'react';
-import s from './todo.module.css'
+import { TodoT } from "@/api/types";
 import { Todo } from "./Todo";
+import s from "./todo.module.css";
 
-type Props = {
-    todoList: TodoType[]
-}
-
-export const ToDoList = ({ todoList}: Props) => {
-    return (
-      <div className={s.todoList}>
-        {todoList.map((item, key) => <Todo key={key} todo={item} />)}
-      </div>
-    );
+export const ToDoList = ({ todos }: { todos: TodoT[] }) => {
+  return (
+    <div className={s.todoList}>
+      {todos.map((item, key) => (
+        <Todo key={key} todo={item} />
+      ))}
+    </div>
+  );
 };
